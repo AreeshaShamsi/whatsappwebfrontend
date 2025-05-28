@@ -1,0 +1,21 @@
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-text {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  padding-right: 2rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
